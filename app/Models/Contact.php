@@ -16,7 +16,7 @@ class Contact extends Model
     {
         return $this->belongsTo(
             Organization::class,
-            'organization_id',
+            'organization_id'
         );
     }
 }

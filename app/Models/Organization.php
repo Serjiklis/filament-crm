@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Account;
 use App\Models\Contact;
+use App\Models\Organization;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Builder;
 
@@ -33,7 +34,7 @@ class Organization extends Model
     public function scopeAccount(Builder $builder): Builder
     {
        
-        return $builder->whereBelongsTo(auth()->user()->account);
+        return  $builder->where('account_id', auth()->user()->account_id);
     }
     
      
