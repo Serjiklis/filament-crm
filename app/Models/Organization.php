@@ -6,9 +6,10 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Account;
 use App\Models\Contact;
-use App\Models\Organization;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Builder;
+use Squire\Models\Country;
+use App\Models\HasMany;
 
 class Organization extends Model
 {
@@ -23,7 +24,15 @@ class Organization extends Model
         );
     }
     
-    public function contacts(): HasMany
+    public function countryName()
+    {
+        return $this->belongsTo(
+            Country::class,
+            'country',
+        );
+    }
+    
+    public function contacts()
     {
         return $this->hasMany(
             Contact::class,

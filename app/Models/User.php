@@ -9,6 +9,7 @@ use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 use Filament\Models\Contracts\FilamentUser;
 use Filament\Models\Contracts\HasName;
+use App\Models\Account;
 
 class User extends Authenticatable implements FilamentUser, HasName
 {
@@ -33,6 +34,11 @@ class User extends Authenticatable implements FilamentUser, HasName
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+    
+    public function account(): BelongsTo 
+    {
+        return $this->belongsTo(Account::class, 'account_id');
+    }
     
      public function canAccessFilament(): bool
     {

@@ -19,4 +19,5 @@ class Contact extends Model
             'organization_id'
         );
     }
+    
 }
