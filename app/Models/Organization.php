@@ -9,7 +9,8 @@ use App\Models\Contact;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Builder;
 use Squire\Models\Country;
-use App\Models\HasMany;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Organization extends Model
 {

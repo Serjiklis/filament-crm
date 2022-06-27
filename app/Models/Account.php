@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use App\Models\Organization;
 use App\Models\User;
 use App\Models\Contact;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Account extends Model
 {
