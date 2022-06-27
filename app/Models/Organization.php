@@ -45,6 +45,5 @@ class Organization extends Model
        
         return  $builder->where('account_id', auth()->user()->account_id);
     }
-    
      
 }

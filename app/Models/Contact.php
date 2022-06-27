@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Organization;
+use Squire\Models\Country;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Contact extends Model
@@ -17,6 +18,14 @@ class Contact extends Model
         return $this->belongsTo(
             Organization::class,
             'organization_id'
+        );
+    }
+    
+     public function countryName()
+    {
+        return $this->belongsTo(
+            Country::class,
+            'country',
         );
     }
     
