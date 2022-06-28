@@ -2,29 +2,15 @@
 
 
 
+## About Filament-CRM
 
+This version implements the basic functionality, since this code was written in the process of learning and getting to know Filament.
 
+- [Learn more about Filament.](https://filamentphp.com/).
 
-
-
-## About
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
 
 ## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Thank you for the information and help in the implementation [The code is written based on the video from the YouTube channel JustSteveKing](https://www.youtube.com/c/JustSteveKing).
 
 
