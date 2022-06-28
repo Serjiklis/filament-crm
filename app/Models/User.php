@@ -11,9 +11,11 @@ use Filament\Models\Contracts\FilamentUser;
 use Filament\Models\Contracts\HasName;
 use App\Models\Account;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Filament\Models\Contracts\HasAvatar;
+use Illuminate\Support\Facades\Storage;
 
 
-class User extends Authenticatable implements FilamentUser, HasName
+class User extends Authenticatable implements FilamentUser, HasName, HasAvatar
 {
     use HasApiTokens, HasFactory, Notifiable;
 
@@ -50,5 +52,10 @@ class User extends Authenticatable implements FilamentUser, HasName
      public function getFilamentName(): string
     {
         return "{$this->first_name} {$this->last_name}";
+    }
+    
+    public function getFilamentAvatarUrl(): ?string 
+    {
+        return Storage::url($this->photo_path);
     }
 }
