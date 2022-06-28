@@ -1,7 +1,12 @@
 <p align="center"><a href="https://filamentphp.com/" target="_blank"><img src="https://user-images.githubusercontent.com/41773797/131910226-676cb28a-332d-4162-a6a8-136a93d5a70f.png" width="400"></a></p>
 
+
+
+
+
+
 <p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
+<a href="https://github.com/filamentphp/filament/actions"><img src="https://camo.githubusercontent.com/345268aa913e8c633bd0321b5a6466ecfefe6d54adfe9d02efa24a2a36097ebe/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f54657374732d70617373696e672d677265656e3f7374796c653d666f722d7468652d6261646765266c6f676f3d676974687562" alt="Tests passing"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
