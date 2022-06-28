@@ -26,12 +26,14 @@ class AppServiceProvider extends ServiceProvider {
      */
     public function boot() {
         Model::unguard();
-        
+
         Filament::serving(function () {
+            Filament::registerTheme(mix('css/filament.css'));
+            
             Filament::registerUserMenuItems([
                         UserMenuItem::make()
                         ->label('Your Profile')
-                        ->url(UserResource::getUrl('edit',['record'=>auth()->user()]))
+                        ->url(UserResource::getUrl('edit', ['record' => auth()->user()]))
                         ->icon('heroicon-s-user'),
                         UserMenuItem::make()
                         ->label('Manage Users')
@@ -40,6 +42,7 @@ class AppServiceProvider extends ServiceProvider {
                     // ...
             ]);
         });
+
     }
 
 }
