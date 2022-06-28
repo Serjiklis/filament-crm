@@ -11,6 +11,6 @@ This version implements the basic functionality, since this code was written in 
 
 ## Contributing
 
-Thank you for the information and help in the implementation [The code is written based on the video from the YouTube channel JustSteveKing](https://www.youtube.com/c/JustSteveKing).
+Thank you for the information and help in the implementation <br> [The code is written based on the video from the YouTube channel JustSteveKing](https://www.youtube.com/c/JustSteveKing).
 
 
